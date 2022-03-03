@@ -1,0 +1,37 @@
+:root {
+    --colortema: #fff;
+    --colorprincipal: #124f88;
+    --colorsecundario: rgb(216, 172, 42);
+    --colortxtinv: #fff;
+    --colortxtinv2: rgb(173, 189, 188);
+    --colortxtnorm: #000;
+    --navbarcolor: #519bc8;
+    --mobilmenu: #346;
+    --color-wapp: #199245;
+    --color-telegram: #229ED9;
+    --color-linkedin: #0e76a8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: var(--colortema);
+    color: var(--colortxtnorm);
+    padding-top: 110px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colortxtnorm);
+}
+
+li {
+    list-style: none;
+}

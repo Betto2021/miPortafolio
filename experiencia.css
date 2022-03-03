@@ -1,0 +1,101 @@
+    .experiencia {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-top: 20px;
+        width: 100%;
+    }
+    
+    .experiencias-title {
+        font-size: 30px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .exp-date {
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--colorsecundario);
+    }
+    
+    .company {
+        text-transform: uppercase;
+        font-size: 23px;
+        font-weight: 400;
+        margin: 3px 0;
+    }
+    
+    .cargo {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 1px 0 10px 0;
+    }
+    
+    .contenedor-experiencia {
+        top: -1px;
+        background-color: var(--colorprincipal);
+        color: var(--colortxtinv);
+        font-size: 18px;
+        font-weight: 400;
+        z-index: 3;
+    }
+    
+    .cero,
+    .uno,
+    .dos {
+        padding: 25px;
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+    
+    .waves {
+        position: absolute;
+        top: -40px;
+        width: 100%;
+    }
+    
+    @media (min-width: 1020px) {
+        .cero,
+        .uno,
+        .dos {
+            padding: 25px;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .experiencias-title {
+            font-size: 50px;
+        }
+        .exp-date {
+            font-size: 40px;
+        }
+        .company {
+            font-size: 30px;
+        }
+        .cargo {
+            font-size: 20px;
+        }
+        .grilla-experiencia {
+            display: grid;
+            grid-template-columns: auto 2px auto;
+            gap: 15px;
+        }
+        .line {
+            background-color: var(--colorsecundario);
+            position: relative;
+        }
+        .line::before,
+        .line::after {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: -9px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--colorsecundario);
+            z-index: 5;
+        }
+    }

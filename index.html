@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./navbar.css" class="css">
+    <link rel="stylesheet" href="./perfil.css">
+    <link rel="stylesheet" href="./skills.css">
+    <link rel="stylesheet" href="./experiencia.css">
+    <link rel="stylesheet" href="./footer.css">
+    <title>Jairo Rodríguez Developer</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="logo-pal">
+                <img src="./images/jr.jpg" alt="imagen JR" class="img-pal" width="50" height="50" />
+                <h4 class="nombre">JAIRO RODRIGUEZ</h4>
+                <h5 class="profesion">Web Dev-Técnico contable</h5>
+            </a>
+            <button class="hamburguesa" aria-label="abrir menu"><img id="abrir" src="./images/menu.png" alt="abrir menu"></button>
+
+            <ul class="menu-invisible">
+                <li class="menu-list" id="menu1">
+                    <a href="#perfil" class="menu-list-link">Perfil</a>
+                </li>
+                <li class="menu-list" id="menu2">
+                    <a href="#experiencia" class="menu-list-link">Experiencia</a>
+                </li>
+                <li class="menu-list" id="menu3">
+                    <a href="#skills" class="menu-list-link">Habilidades</a>
+                </li>
+                <li class="menu-list" id="menu4">
+                    <a href="#contacto" class="menu-list-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="perfil" id="perfil">
+        <div class="perfil-info">
+            <h1 class="title">Hola, soy Jairo Rodríguez</h1>
+            <p class="detalle-perfil">Me gusta el desarrollo web, soy auxiliar contable egresado del SENA, tengo un año de experiencia en esta rama, y 10 años de experiencia en previsiones para callcenter inbound de servicio al cliente, ventas y fidelización</p>
+
+        </div>
+        <div class="perfil-imagen">
+            <img class="imagen-del-perfil" src="./images/jr.jpg" alt="Imagen Jairo Rodríguez">
+            <button class="cv-fisico">Descargar CV</button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="skills-title">HABILIDADES</h2>
+        <ul class="lista-skills">
+            <li class="skills-items"><img src="./images/icon-skills/git-icon.svg" alt="git" class="skill-icons">GIT</li>
+            <li class="skills-items"><img src="./images/icon-skills/html-1.svg">HTML</li>
+            <li class="skills-items"><img src="./images/icon-skills/css-3.svg" alt="git" class="skill-icons">CSS</li>
+            <li class="skills-items"><img src="./images/icon-skills/javascript-1.svg" alt="git" class="skill-icons">JavaScript</li>
+            <li class="skills-items"><img src="./images/icon-skills/react-2.svg" alt="git" class="skill-icons">React.Js</li>
+            <li class="skills-items"><img src="./images/icon-skills/redux.svg">Redux</li>
+            <li class="skills-items"><img src="./images/icon-skills/microsoft-sql-server-2000.svg">SQL</li>
+            <li class="skills-items"><img src="./images/icon-skills/nodejs-icon.svg">NodeJS</li>
+
+
+        </ul>
+
+    </section>
+
+    <section class="experiencia" id="experiencia">
+        <img src="./images/wave.svg" alt="ondas fgondo experiencia" class="waves wave-top">
+        <div class="contenedor-experiencia">
+            <h2 class="experiencias-title">EXPERIENCIA</h2>
+            <div class="grilla-experiencia">
+                <div class="espacio"></div>
+                <div class="line"></div>
+                <div class="cero">
+                    <div class="exp-date">2022</div>
+                    <div class="company">Independiente</div>
+                    <div class="cargo">Página del clima</div>
+                    <div class="exp-description">Diseño e implementación en React de una página para validar el clima en diferentes ciudades del mundo. Diseño e implementación en React de una página tributo de Star Wars. </div>
+                </div>
+                <div class="uno">
+                    <div class="exp-date">2020</div>
+                    <div class="company">TOPTEX S.A.</div>
+                    <div class="cargo">Auxiliar contable</div>
+                    <div class="exp-description">Causar facturas de los proveedores, automatización de los certificados de retenciones de fuente y de ICA para los proveedores, solicitar los certificados al proveedor a los clientes. Digitaslizar archivos de compras. Generación de
+                        informe dinámico de las tiendas.
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="espacio"></div>
+                <div class="espacio" id="espacio-contacto"></div>
+                <div class="line"></div>
+                <div class="dos">
+                    <div class="exp-date">2003-2016</div>
+                    <div class="company">COLOMBIA TELECOMUNICACIONES ESP -MOVISTAR-</div>
+                    <div class="cargo">Analista de Planificación Pronóstico y Programación</div>
+                    <div class="exp-description">Realizar gestiòn en tiempo real de las operaciones de contact center. Validar la cuenta corriente de analistas con los proveedores. Validar y ejecutar la previsiòn tanto de largo plazo como de corto plazo en términos de tráfico y agentes
+                        que se deben conectar por cada uno de los intérvalos. Realizar análisis de lo sucedido y validar cumplimientos de niveles de servicio. Carterizar correos de la plataforma de e-mail de Grandes Cuentas Top Pymes y Pymes. Creación
+                        de macro para analizar el comportamiento inbound de los diferentes líneas de atención, llamadas reales vs pronosticadas por lapsos de 30 minutos
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </section>
+    <footer class="contacto" id="contacto">
+        <div class="social-container">
+            <button class="btn-footer" id="wapp"><img class="wapp" src="./images/icons8-whatsapp.svg" alt="whatsApp"></button>
+            <button class="btn-footer" id="telegram"><img class="telegram" src="./images/icons8-telegram-app.svg" alt="telegram"></button>
+            <button class="btn-footer" id="linkedin"><img class="linkedin" src="./images/icons8-linkedin-circled.svg" alt="linkedin"></button>
+        </div>
+        <span class="creado">Diseño y programación: JAIRO RODRIGUEZ</span>
+
+
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

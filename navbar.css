@@ -1,0 +1,164 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorsecundario);
+    box-shadow: 0 4px 5px var(--movilmenu);
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    max-width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+
+/*logo*/
+
+.logo-pal {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: stretch;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.logo-pal:hover {
+    border-bottom: 5px solid var(--colorprincipal);
+    color: var(--colorprincipal);
+    transition: all 0.3s;
+}
+
+.img-pal {
+    border-radius: 50%;
+}
+
+.nombre {
+    margin-left: 5px;
+    margin-top: 18px;
+    align-self: start;
+}
+
+.profesion {
+    position: absolute;
+    top: 28px;
+    left: 7px;
+}
+
+
+/*menu*/
+
+.menu-invisible {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list {
+    padding: 0 15px;
+}
+
+.menu-list-link {
+    color: var(--colortxtnorm);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 80px;
+    transition: all 0.3s;
+}
+
+.menu-list-link:hover {
+    border-bottom: 5px solid var(--colorprincipal);
+    color: var(--colorprincipal);
+    transition: all 0.3s;
+}
+
+
+/*botones menu*/
+
+.hamburguesa {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    line-height: 135px;
+    cursor: pointer;
+}
+
+#abrir {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+}
+
+@media (max-width: 1020px) {
+    /*menu*/
+    .menu-invisible {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 100%;
+        transition: top 0.7s;
+        transition: background-color 0.7s;
+    }
+    .menu {
+        top: 90px;
+        transition: top 0.7s;
+        align-items: center;
+        background-color: var(--mobilmenu);
+        transition: background-color 0.7s;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .menu-list {
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+        line-height: 60px;
+    }
+    .menu-list:hover {
+        background-color: var(--colorsecundario);
+    }
+    .menu-list-link {
+        color: var(--colortxtinv);
+    }
+    /*botones menu*/
+    .hamburguesa-rot {
+        transform: rotate(90deg);
+        transition: transform 0.5s;
+    }
+    .hamburguesa {
+        display: block;
+        /* z-index: 10; */
+        position: relative;
+        /* left: 80%; */
+        width: 70px;
+        height: 70px;
+        transition: transform 0.5s
+    }
+    .abrir {
+        position: absolute;
+        top: 18px;
+        left: 0px;
+    }
+    .logo-pal:hover {
+        border-bottom: initial;
+        color: initial;
+    }
+    .menu-list-link:hover {
+        border-bottom: initial;
+        color: initial;
+    }
+}
