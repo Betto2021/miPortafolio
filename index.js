@@ -66,6 +66,7 @@ const linkLinkedin = document.createElement('a');
 const divGitHub = document.createElement('div');
 const linkGitHub = document.createElement('a');
 
+
 //Llamado al contacto por WApp
 whatsapp.addEventListener('click', () => {
     while (socCont.firstChild) {
