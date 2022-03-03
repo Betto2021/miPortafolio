@@ -111,6 +111,7 @@
         top: 100%;
         transition: top 0.7s;
         transition: background-color 0.7s;
+        overflow-y: scroll;
     }
     .menu {
         top: 90px;
@@ -143,15 +144,17 @@
         display: block;
         /* z-index: 10; */
         position: relative;
-        /* left: 80%; */
-        width: 70px;
-        height: 70px;
+        top: 18px;
+        width: 45px;
+        height: 45px;
         transition: transform 0.5s
     }
-    .abrir {
+    #abrir {
         position: absolute;
-        top: 18px;
+        top: 0px;
         left: 0px;
+        width: 45px;
+        height: 45px;
     }
     .logo-pal:hover {
         border-bottom: initial;
