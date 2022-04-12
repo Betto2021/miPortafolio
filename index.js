@@ -147,6 +147,7 @@ telegram.addEventListener('click', () => {
 
 //Llamado al contacto por ln
 linkedin.addEventListener('click', () => {
+
     while (socCont.firstChild) {
         socCont.removeChild(socCont.firstChild);
     }

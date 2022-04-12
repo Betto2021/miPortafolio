@@ -1,6 +1,6 @@
 :root {
     --colortema: #fff;
-    --colorprincipal: #124f88;
+    --colorprincipal: #000;
     --colorsecundario: rgb(216, 172, 42);
     --colortxtinv: #fff;
     --colortxtinv2: rgb(173, 189, 188);
@@ -23,7 +23,7 @@ section[id] {
 
 body {
     font-family: 'Mukta', sans-serif;
-    background-color: var(--colortema);
+    background-color: var(--colortxtinv2);
     color: var(--colortxtnorm);
     padding-top: 110px;
 }
